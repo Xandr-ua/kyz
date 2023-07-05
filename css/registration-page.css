@@ -1,0 +1,316 @@
+.registration__date-item .select2-container--default .select2-selection--single, .registration__btn, .registration__label-check, .registration__sex-label, .registration__sex-subtitle, .registration__text, .registration__date-subtitle, .registration__input, .registration__label {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.registration__title {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.registration {
+  padding: 40px 0 90px;
+}
+.registration__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  color: #111111;
+  margin-bottom: 40px;
+}
+.registration__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.registration__form {
+  width: 600px;
+}
+.registration__label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: block;
+  margin-bottom: 16px;
+}
+.registration__input {
+  font-size: 14px;
+  line-height: 16px;
+  color: #091278;
+  margin-top: 12px;
+  width: 100%;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px 18px;
+}
+.registration__input::-webkit-input-placeholder {
+  color: #898989;
+}
+.registration__input::-moz-placeholder {
+  color: #898989;
+}
+.registration__input:-ms-input-placeholder {
+  color: #898989;
+}
+.registration__input::-ms-input-placeholder {
+  color: #898989;
+}
+.registration__input::placeholder {
+  color: #898989;
+}
+.registration__input:focus {
+  outline-color: #091278;
+}
+.registration__date-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.registration__date-item:first-child .registration__date-select {
+  width: 80px;
+}
+.registration__date-item:last-child .registration__date-select {
+  width: 80px;
+}
+.registration__date-inner {
+  margin-bottom: 16px;
+}
+.registration__date-subtitle {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: block;
+  margin-bottom: 16px;
+}
+.registration__date-list {
+  margin-bottom: 10px;
+}
+.registration__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #a19c9c;
+}
+.registration__sex-inner {
+  margin-bottom: 16px;
+}
+.registration__sex-subtitle {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: block;
+  margin-bottom: 16px;
+}
+.registration__sex-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.registration__sex-item:first-child {
+  margin-right: 20px;
+}
+.registration__sex-label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.registration__sex-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.registration__sex-input:checked + .registration__sex-text::before {
+  background-image: url(../images/icons/radio-check.svg);
+}
+.registration__sex-text {
+  padding-left: 34px;
+  cursor: pointer;
+  position: relative;
+}
+.registration__sex-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../images/icons/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.registration__label-check {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a19c9c;
+  margin-bottom: 40px;
+}
+.registration__input-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.registration__input-check:checked + .registration__input-check-text::before {
+  background-image: url(../images/icons/checkout-checkbox-active.svg);
+}
+.registration__input-check-text {
+  padding-left: 34px;
+  position: relative;
+}
+.registration__input-check-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../images/icons/checkout-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.registration__label-link {
+  position: relative;
+}
+.registration__label-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #5d5b5b;
+  height: 2px;
+  width: 100%;
+}
+.registration__btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  padding: 15px 50px;
+  background-color: #091278;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.registration__btn:hover {
+  background-color: #EBEDFF;
+  color: #091278;
+}
+
+.registration__date-item .select2-container--default .select2-selection--single {
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  color: #898989;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration__date-item .select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-40%);
+      -ms-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+.registration__date-item .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent;
+  border-width: 0;
+  top: 50%;
+  right: 3px;
+  -webkit-transform: translateY(-56%);
+      -ms-transform: translateY(-56%);
+          transform: translateY(-56%);
+  background-image: url("../images/icons/arrow-city-bottom-grey.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.registration__date-item .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  -webkit-transform: translateY(-56%) rotate(180deg);
+      -ms-transform: translateY(-56%) rotate(180deg);
+          transform: translateY(-56%) rotate(180deg);
+}
+
+.date-select .select2-results__option--selectable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #fff;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #EBEDFF;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .registration__form {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .registration__form {
+    width: 300px;
+  }
+  .registration__label-link {
+    margin-left: 35px;
+  }
+  .registration__date-item .select2-container--default .select2-selection--single {
+    font-size: 14px;
+    height: 40px;
+  }
+}

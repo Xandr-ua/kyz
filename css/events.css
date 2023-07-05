@@ -1,0 +1,209 @@
+.events__text {
+  font-family: "Roboto-Light", sans-serif;
+  font-weight: 300;
+}
+
+.events__btn-seeall, .events__abovetitle, .events__date {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.events__subtitle {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.events__wrap {
+  padding: 125px 0 120px;
+}
+.events__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 52px;
+}
+.events__list-mobile {
+  display: none;
+  margin-bottom: 20px;
+}
+.events__item {
+  width: 32%;
+}
+.events__inner {
+  overflow: hidden;
+  height: 288px;
+}
+.events__inner:hover .events__btn {
+  display: block;
+}
+.events__inner:hover .events__imgbox {
+  height: 145px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.events__imgbox {
+  position: relative;
+  height: 193px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("../images/events-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.events__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.events__date {
+  font-size: 16px;
+  line-height: 19px;
+  color: #363636;
+  background-color: #fff;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.events__content {
+  padding: 24px 24px;
+  background-color: #fff;
+  position: relative;
+}
+.events__abovetitle {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: #A0A0A0;
+  margin-bottom: 12px;
+}
+.events__subtitle {
+  font-size: 20px;
+  line-height: 23px;
+  color: #363636;
+  margin-bottom: 20px;
+}
+.events__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D7D7D;
+}
+.events__btn {
+  width: 60px;
+  height: 60px;
+  background-color: #091278;
+  border-radius: 50%;
+  position: absolute;
+  top: -21%;
+  right: 24px;
+  display: none;
+}
+.events__btn:hover .events__btn-line {
+  width: 35px;
+  left: 20%;
+}
+.events__btn-line {
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 33%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.events__btn-line::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+  width: 10px;
+  height: 1px;
+}
+.events__btn-line::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #fff;
+  width: 10px;
+  height: 1px;
+}
+.events__btn-seeall {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background-color: #091278;
+  border-radius: 4px;
+  padding: 15px 76px;
+  display: block;
+  width: 265px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.events__btn-seeall:hover {
+  background-color: #EBEDFF;
+  color: #091278;
+}
+
+@media (max-width: 1200px) {
+  .events__inner:hover .events__imgbox {
+    height: 110px;
+  }
+  .events__btn {
+    top: -16%;
+  }
+}
+@media (max-width: 576px) {
+  .events__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .events__item {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .events__list {
+    display: none;
+  }
+  .events__list-mobile {
+    display: block;
+  }
+  .events__item {
+    padding-right: 10px;
+  }
+  .events__imgbox {
+    height: 110px;
+  }
+  .events__btn {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .events__wrap {
+    padding: 32px 0 72px;
+  }
+}

@@ -1,0 +1,126 @@
+@import 'vars';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__link {
+    @extend %roboto-medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: #898989;
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    padding: 15px 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #F5F5F5;
+      border-color: #898989;
+    }
+  }
+
+  &__link-active {
+    background-color: #EBEDFF;
+    border-color: #EBEDFF;
+    color: #091278;
+    pointer-events: none;
+
+    &:hover {
+      background-color: #EBEDFF;
+      border-color: #EBEDFF;
+    }
+  }
+
+  &__arrow-prev {
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    position: relative;
+    padding: 26px 26px;
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      background-image: url("../images/icons/arrow-grey-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background-color: #F5F5F5;
+      border-color: #898989;
+    }
+  }
+
+  &__arrow-next {
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    position: relative;
+    padding: 26px 26px;
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../images/icons/arrow-grey-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background-color: #F5F5F5;
+      border-color: #898989;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .pagination__arrow-prev {
+    padding: 20px 20px;
+  }
+
+  .pagination__list {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .pagination__link {
+    padding: 10px 15px;
+  }
+
+  .pagination__arrow-next {
+    padding: 20px 20px;
+  }
+}

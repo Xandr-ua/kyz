@@ -1,0 +1,345 @@
+@import 'vars';
+
+.products {
+  padding-bottom: 120px;
+
+  &__item {
+    margin-bottom: 90px;
+    
+    &:last-child {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__collection-inner {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  &__collection-img {
+    margin-right: 24px;
+  }
+
+  &__collection-content {
+    width: 28%;
+  }
+
+  &__collection-aboveheader {
+    @extend %roboto-regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    color: #A0A0A0;
+    margin-bottom: 12px;
+  }
+
+  &__collection-subtitle {
+    @extend %roboto-medium;
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;
+    margin-bottom: 20px;
+  }
+
+  &__collection-text {
+    @extend %roboto-light;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7D7D7D;
+    margin-bottom: 40px;
+  }
+
+  &__collection-btn {
+    @extend %roboto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    border: 1px solid #E1E1E1;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 50px 10px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: #EBEDFF;
+      color: #091278;
+    }
+
+    &:hover .products__collection-btn-line {
+      width: 18px;
+      right: 24px;
+      background-color: #091278;
+    }
+
+    &:hover .products__collection-btn-line::before {
+      transition: all 0.3s;
+      background-color: #091278;
+    }
+
+    &:hover .products__collection-btn-line::after {
+      transition: all 0.3s;
+      background-color: #091278;
+    }
+  }
+
+  &__collection-btn-line {
+    width: 12px;
+    height: 2px;
+    background-color: #363636;
+    display: block;
+    margin-left: 12px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: 0;
+      transform: rotate(45deg);
+      background-color: #363636;
+      width: 10px;
+      height: 2px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      transform: rotate(-45deg);
+      background-color: #363636;
+      width: 10px;
+      height: 2px;
+    }
+  }
+
+  &__banner-inner {
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    padding-bottom: 8px;
+  }
+
+  &__discount-inner {
+    background-image: url("../images/discount-banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 45.7vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &__discount-content {
+    width: 44%;
+    margin-left: 100px;
+  }
+
+  &__discount-aboveheader {
+    @extend %roboto-regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    color: #A0A0A0;
+    margin-bottom: 12px;
+  }
+
+  &__discount-subtitle {
+    @extend %roboto-medium;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #363636;
+    margin-bottom: 20px;
+  }
+
+  &__discount-text {
+    @extend %roboto-light;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7D7D7D;
+    margin-bottom: 20px;
+  }
+
+  &__discount-list {
+    margin-left: 22px;
+    margin-bottom: 52px;
+  }
+
+  &__discount-item {
+    @extend %roboto-light;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7D7D7D;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__discount-btn {
+    @extend %roboto-regular;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #091278;
+    border-radius: 4px;
+    padding: 16px 16px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #EBEDFF;
+      color: #091278;
+    }
+  }
+
+  &__show-more {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__show-more-btn {
+    @extend %roboto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: #091278;
+    border: 1px solid #091278;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 50px 10px 16px;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #EBEDFF;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      background-image: url("../images/icons/arrow-blue-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .products__sublist {
+    flex-wrap: wrap;
+  }
+
+  .products__subitem {
+    margin-bottom: 40px;
+  }
+
+  .products__subitem-mobilehide {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .products__collection-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .products__subitem {
+    margin-bottom: 30px;
+  }
+
+  .products__item {
+    margin-bottom: 10px;
+  }
+
+  .products__collection-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products__collection-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .products__collection-content {
+    width: 100%;
+  }
+
+  .products__subitem-discountheight {
+    background-image: url(../images/discount-banner-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 300px;
+    margin-bottom: 0;
+  }
+
+  .products__discount-inner {
+    background-image: none;
+    width: 100%;
+  }
+
+  .products__discount-content {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .products__discount-list {
+    margin-left: 0;
+  }
+
+  .product-page__content-plug {
+    display: none;
+  }
+
+  .product-page__content-text {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .products__collection-btn {
+    display: none;
+  }
+
+  .products__item {
+    margin-bottom: 32px;
+  }
+
+  .products__subitem {
+    margin-bottom: 20px;
+  }
+
+  .products__show-more {
+    display: none;
+  }
+}

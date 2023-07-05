@@ -1,0 +1,293 @@
+.baner__top-text, .baner__top-date, .baner__top-title {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.baner__top-btn-dots {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.baner__top-list .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.baner__top-list .slick-prev {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  -webkit-transform: translateY(-80%);
+      -ms-transform: translateY(-80%);
+          transform: translateY(-80%);
+  z-index: 1;
+}
+.baner__top-list .slick-next {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  -webkit-transform: translateY(-80%);
+      -ms-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+.baner__top-dots-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -50px;
+  right: 45px;
+}
+.baner__top-dots-list li:not(:last-child) {
+  margin-right: 4px;
+}
+.baner__top-dots-list .slick-active .baner__top-btn-dots {
+  color: #091278;
+}
+.baner__top-btn-dots-number {
+  display: none;
+}
+.baner__top-btn-dots {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5px 8px;
+  background-color: #fff;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  color: #898989;
+}
+.baner__top-wrap {
+  margin: 0 auto;
+  max-width: 2000px;
+}
+.baner__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.baner__top-box {
+  margin-right: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+.baner__top-title {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 20px;
+}
+.baner__top picture img {
+  width: 2000px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}
+.baner__top-date {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 16px;
+}
+.baner__top-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2e2e2e;
+  max-width: 500px;
+  text-align: center;
+}
+
+.mobile__nav {
+  padding: 16px 0 32px;
+  display: none;
+}
+.mobile__nav-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #091278;
+  border-radius: 4px;
+  padding: 15px 0;
+  width: 100%;
+}
+.mobile__nav-line {
+  background-color: #fff;
+  width: 18px;
+  height: 2px;
+  margin-left: 4px;
+  position: relative;
+}
+.mobile__nav-line::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background-color: #fff;
+  width: 18px;
+  height: 2px;
+}
+.mobile__nav-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: #fff;
+  width: 18px;
+  height: 2px;
+}
+.mobile__nav-text {
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 4px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .baner__top-inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .baner__top-box {
+    margin-right: 0;
+  }
+  .baner__top-title {
+    font-size: 26px;
+  }
+  .baner__top-img-num {
+    width: 220px;
+  }
+  .baner__top-text {
+    max-width: 350px;
+  }
+  .baner__top-list .slick-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .baner__top-inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .baner__top-box {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .baner__top-list .slick-prev {
+    top: 80%;
+    -webkit-transform: translateY(14%);
+        -ms-transform: translateY(14%);
+            transform: translateY(14%);
+    left: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  .baner__top-list .slick-next {
+    top: 80%;
+    -webkit-transform: translateY(14%);
+        -ms-transform: translateY(14%);
+            transform: translateY(14%);
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+  .baner__top-dots-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: 0;
+  }
+  .baner__top picture img {
+    height: 400px;
+  }
+  .baner__top-aboveheader {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .baner__top-title {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .baner__top-img-num {
+    width: 160px;
+  }
+  .baner__top-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .baner__top-btn-dots-title {
+    display: none;
+  }
+  .baner__top-dots-list li.slick-active .baner__top-btn-dots-title {
+    display: block;
+  }
+  .baner__top-dots-list li.slick-active .baner__top-btn-dots-number {
+    display: none;
+  }
+  .baner__top-btn-dots-number {
+    display: block;
+  }
+}

@@ -1,0 +1,121 @@
+.personal-discount__item, .personal-discount__text {
+  font-family: "Roboto-Light", sans-serif;
+  font-weight: 300;
+}
+
+.personal-discount__btn, .personal-discount__aboveheader {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.personal-discount {
+  margin: 40px 0 30px;
+  padding: 55px 0;
+  background-image: url("../images/discount-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.personal-discount__wrap {
+  width: 32%;
+  margin-top: -40px;
+  margin-left: 100px;
+}
+.personal-discount__aboveheader {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: #A0A0A0;
+  margin-bottom: 12px;
+}
+.personal-discount__title {
+  width: 85%;
+  margin-bottom: 20px;
+}
+.personal-discount__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D7D7D;
+  margin-bottom: 20px;
+}
+.personal-discount__list {
+  margin-bottom: 52px;
+}
+.personal-discount__item {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 18px;
+  color: #7D7D7D;
+  position: relative;
+}
+.personal-discount__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.personal-discount__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../images/icons/discount-gradient.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 8px;
+  height: 8px;
+}
+.personal-discount__btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  padding: 15px 16px;
+  background-color: #091278;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.personal-discount__btn:hover {
+  background-color: #EBEDFF;
+  color: #091278;
+}
+
+@media (max-width: 1200px) {
+  .personal-discount__wrap {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .personal-discount {
+    padding-top: 32px;
+  }
+  .personal-discount__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-bottom: 130px;
+  }
+  .personal-discount__item::before {
+    width: 0;
+    height: 0;
+  }
+  .personal-discount {
+    background-image: url(../images/discount-banner-bg-mobile.jpg);
+  }
+  .personal-discount__wrap {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

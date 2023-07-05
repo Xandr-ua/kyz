@@ -1,0 +1,111 @@
+.popular-products {
+  padding: 75px 0 60px;
+}
+.popular-products__btnprew {
+  margin-right: 20px;
+}
+.popular-products__btnnext {
+  margin-left: 20px;
+}
+.popular-products__wrap {
+  position: relative;
+}
+.popular-products-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popular-products-inner-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -30px;
+}
+.popular-products-inner-button svg {
+  display: block;
+}
+.popular-products-inner-button .slick-disabled path {
+  fill: #CCCCCC;
+}
+.popular-products__item {
+  padding-bottom: 125px;
+}
+.popular-products__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 16%;
+  z-index: -1;
+}
+.popular-products__dots-itemsone, .popular-products__dots-itemstwo {
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  height: 6px;
+  width: 50%;
+}
+.popular-products__mobile-wrap {
+  display: none;
+}
+.popular-products__mobile-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.popular-products__mobile-item {
+  width: 25%;
+}
+
+.active__dots {
+  background-color: #091278;
+}
+
+@media (max-width: 1200px) {
+  .popular-products {
+    padding-bottom: 0;
+  }
+  .popular-products__item {
+    padding-right: 10px;
+    margin-bottom: 100px;
+  }
+  .popular-products__dots {
+    bottom: 15%;
+  }
+}
+@media (max-width: 992px) {
+  .popular-products-inner-button {
+    display: none;
+  }
+  .popular-products__wrap {
+    display: none;
+  }
+  .popular-products {
+    padding-bottom: 54px;
+  }
+}
+@media (max-width: 576px) {
+  .popular-products {
+    padding: 32px 0;
+  }
+}

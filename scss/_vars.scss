@@ -1,0 +1,51 @@
+%inter-regular {
+  font-family: 'Inter-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%inter-semibold {
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%inter-bold {
+  font-family: 'Inter-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%roboto-light {
+  font-family: 'Roboto-Light', sans-serif;
+  font-weight: 300;
+}
+
+%roboto-regular {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-medium {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-regular {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-medium {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-semiBold {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

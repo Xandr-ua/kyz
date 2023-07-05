@@ -1,0 +1,107 @@
+.faq__content-text, .faq__text {
+  font-family: "Roboto-Light", sans-serif;
+  font-weight: 300;
+}
+
+.faq__aboveheader {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.faq__content-subtitle {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.faq {
+  padding: 40px 0 120px;
+}
+.faq__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.faq__aboveheader {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: #A0A0A0;
+  margin-bottom: 12px;
+}
+.faq__title {
+  margin-bottom: 20px;
+}
+.faq__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D7D7D;
+  text-align: center;
+  width: 49%;
+  margin-bottom: 60px;
+}
+.faq__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.faq__item {
+  width: 33%;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 40px 68px 40px 32px;
+  margin-bottom: 12px;
+}
+.faq__content {
+  position: relative;
+  display: block;
+}
+.faq__content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  background-image: url("../images/icons/arrow-blue-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.faq__content-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  margin-bottom: 12px;
+}
+.faq__content-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D7D7D;
+}
+
+@media (max-width: 992px) {
+  .faq__item {
+    width: 49%;
+  }
+}
+@media (max-width: 768px) {
+  .faq__item {
+    width: 100%;
+  }
+}
